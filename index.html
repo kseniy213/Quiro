@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>Quiro</title>
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container header__container">
+			<a href="/" class="header__logo">Quiro Diagnostic Center</a>
+			<div class="header__nav">
+				<ul class="header__ul" id="headerUl">
+					<li class="header__li"><a class="header__a  _active" href="/">Home</a></li>
+					<li class="header__li"><a class="header__a" href="/">Service</a></li>
+					<li class="header__li"><a class="header__a" href="/">Doctors</a></li>
+					<li class="header__li"><a class="header__a" href="/">Gallery</a></li>
+					<li class="header__li"><a class="header__a" href="/">Contact</a></li>
+					<span class="material-icons icon-close">close</span>
+				</ul>
+				<span class="material-icons icon-menu" onclick="navToggle()">menu</span>
+			</div>
+			<div class="search">
+				<input class="search__input" type="search" placeholder="Search Here"/>
+				<svg class="search__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+					<mask id="mask0_2775_5523" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+						<rect width="24" height="24" fill="#D9D9D9"/>
+					</mask>
+					<g mask="url(#mask0_2775_5523)">
+						<path d="M19.6 21L13.3 14.7C12.8 15.1 12.225 15.4167 11.575 15.65C10.925 15.8833 10.2333 16 9.5 16C7.68333 16 6.146 15.371 4.888 14.113C3.62933 12.8543 3 11.3167 3 9.5C3 7.68333 3.62933 6.14567 4.888 4.887C6.146 3.629 7.68333 3 9.5 3C11.3167 3 12.8543 3.629 14.113 4.887C15.371 6.14567 16 7.68333 16 9.5C16 10.2333 15.8833 10.925 15.65 11.575C15.4167 12.225 15.1 12.8 14.7 13.3L21 19.6L19.6 21ZM9.5 14C10.75 14 11.8127 13.5627 12.688 12.688C13.5627 11.8127 14 10.75 14 9.5C14 8.25 13.5627 7.18733 12.688 6.312C11.8127 5.43733 10.75 5 9.5 5C8.25 5 7.18733 5.43733 6.312 6.312C5.43733 7.18733 5 8.25 5 9.5C5 10.75 5.43733 11.8127 6.312 12.688C7.18733 13.5627 8.25 14 9.5 14Z" fill="white"/>
+					</g>
+				</svg>
+			</div>
+		</div>
+	</header>
+
+
+	<main> 
+		<div class="container">
+			<!--carousel-->
+			<section class="services-section">
+				<div class="title">Our Services </div>
+				<div class="desc">Magnis facilisis tortor volutpat lobortis ac id. Libero enim nunc etiam consectetur lacus. In malesuada dictum turpis amet porttitor viverra laoreet at commodo. Pellentesque vitae id semper nec sollicitudin. Quis purus, mus consectetur pharetra ipsum facilisis amet cras purus.</div>
+				<div class="services">
+					<div class="service">
+						<div class="service__img">
+							<svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="0 0 110 110" fill="none">
+								<mask id="mask0_2775_5590" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="110" height="110">
+								<rect width="109.509" height="109.509" fill="#D9D9D9"/>
+								</mask>
+								<g mask="url(#mask0_2775_5590)">
+								<path d="M50.1916 31.9393V9.125H59.3173V31.9393H50.1916ZM80.3065 44.9435L73.9185 38.3273L90.1166 22.1292L96.5047 28.7453L80.3065 44.9435ZM29.2024 44.9435L13.0042 28.7453L19.3922 22.1292L35.5904 38.3273L29.2024 44.9435ZM54.7544 54.7537C63.7281 54.7537 72.5679 56.5606 81.2738 60.1744C89.9828 63.7851 97.7214 69.2027 104.49 76.4273C105.402 77.3399 105.859 78.4045 105.859 79.6213C105.859 80.8381 105.402 81.9027 104.49 82.8153L93.9951 93.0817C93.1586 93.9183 92.1897 94.3746 91.0885 94.4506C89.9843 94.5267 88.9759 94.2225 88.0634 93.538L74.831 83.4997C74.2227 83.0434 73.7664 82.5111 73.4622 81.9027C73.158 81.2943 73.0059 80.6099 73.0059 79.8494V66.8453C70.1161 65.9327 67.1502 65.2102 64.1083 64.6779C61.0664 64.1456 57.9484 63.8794 54.7544 63.8794C51.5604 63.8794 48.4425 64.1456 45.4006 64.6779C42.3586 65.2102 39.3928 65.9327 36.503 66.8453V79.8494C36.503 80.6099 36.3509 81.2943 36.0467 81.9027C35.7425 82.5111 35.2862 83.0434 34.6778 83.4997L21.4455 93.538C20.5329 94.2225 19.5261 94.5267 18.4249 94.4506C17.3207 94.3746 16.3503 93.9183 15.5138 93.0817L5.01919 82.8153C4.10662 81.9027 3.65033 80.8381 3.65033 79.6213C3.65033 78.4045 4.10662 77.3399 5.01919 76.4273C11.7114 69.2027 19.4302 63.7851 28.1757 60.1744C36.9212 56.5606 45.7808 54.7537 54.7544 54.7537ZM27.3772 70.0393C25.1718 71.18 23.0425 72.4911 20.9892 73.9725C18.9359 75.4569 16.8066 77.1117 14.6012 78.9369L19.1641 83.4997L27.3772 77.1117V70.0393ZM82.1316 70.2674V77.1117L90.3448 83.4997L94.9077 79.165C92.7023 77.1878 90.5729 75.4767 88.5196 74.0318C86.4664 72.5869 84.337 71.3321 82.1316 70.2674Z" fill="#262626"/>
+								</g>
+								</svg>
+						</div>
+						<div class="service__title">Call For Appointments</div>
+						<div class="service__desc">Velit faucibus sed adipiscing commodo. Mattis in at amet, facilisis eu dolor. Quam sit risus egestas morbi.</div>
+						<div class="service__btn">
+							<a href="/">
+								<span>Learn More</span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+									<mask id="mask0_2775_5595" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+									<rect width="24" height="24" fill="#D9D9D9"/>
+									</mask>
+									<g mask="url(#mask0_2775_5595)">
+									<path d="M12 20L10.575 18.6L16.175 13H4V11H16.175L10.575 5.4L12 4L20 12L12 20Z" fill="#8842F0"/>
+									</g>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<!--service2-->
+					<div class="service">
+						<div class="service__img">
+							<svg xmlns="http://www.w3.org/2000/svg" width="111" height="111" viewBox="0 0 111 111" fill="none">
+								<mask id="mask0_2775_5584" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="111" height="111">
+								<rect width="110.25" height="110.25" fill="#D9D9D9"/>
+								</mask>
+								<g mask="url(#mask0_2775_5584)">
+								<path d="M50.5314 55.1251C45.4782 55.1251 41.1524 53.3259 37.554 49.7274C33.9555 46.129 32.1563 41.8032 32.1563 36.75C32.1563 31.6969 33.9555 27.3711 37.554 23.7727C41.1524 20.1742 45.4782 18.375 50.5314 18.375C55.5845 18.375 59.9103 20.1742 63.5087 23.7727C67.1072 27.3711 68.9064 31.6969 68.9064 36.75C68.9064 41.8032 67.1072 46.129 63.5087 49.7274C59.9103 53.3259 55.5845 55.1251 50.5314 55.1251ZM50.5314 45.9376C53.0579 45.9376 55.2216 45.0372 57.0223 43.2364C58.82 41.4387 59.7189 39.2766 59.7189 36.75C59.7189 34.2235 58.82 32.0613 57.0223 30.2637C55.2216 28.4629 53.0579 27.5625 50.5314 27.5625C48.0048 27.5625 45.8427 28.4629 44.045 30.2637C42.2442 32.0613 41.3438 34.2235 41.3438 36.75C41.3438 39.2766 42.2442 41.4387 44.045 43.2364C45.8427 45.0372 48.0048 45.9376 50.5314 45.9376ZM101.522 107.953L86.8221 93.2533C85.2143 94.172 83.4916 94.9377 81.6541 95.5502C79.8166 96.1627 77.8642 96.4689 75.797 96.4689C70.0548 96.4689 65.1732 94.4599 61.1521 90.4419C57.1341 86.4208 55.1251 81.5392 55.1251 75.797C55.1251 70.0548 57.1341 65.1732 61.1521 61.1521C65.1732 57.1341 70.0548 55.1251 75.797 55.1251C81.5392 55.1251 86.4209 57.1341 90.442 61.1521C94.46 65.1732 96.469 70.0548 96.469 75.797C96.469 77.8642 96.1627 79.8165 95.5502 81.654C94.9377 83.4915 94.1721 85.2142 93.2533 86.822L107.953 101.522L101.522 107.953ZM75.797 87.2814C79.0127 87.2814 81.7307 86.1712 83.951 83.9509C86.1713 81.7306 87.2814 79.0126 87.2814 75.797C87.2814 72.5814 86.1713 69.8634 83.951 67.6431C81.7307 65.4228 79.0127 64.3126 75.797 64.3126C72.5814 64.3126 69.8634 65.4228 67.6431 67.6431C65.4228 69.8634 64.3126 72.5814 64.3126 75.797C64.3126 79.0126 65.4228 81.7306 67.6431 83.9509C69.8634 86.1712 72.5814 87.2814 75.797 87.2814ZM13.7813 91.8752V79.1275C13.7813 76.5243 14.4321 74.1126 15.7336 71.8923C17.0352 69.672 18.8344 67.9876 21.1313 66.8392C25.036 64.8485 29.4383 63.1642 34.3384 61.786C39.2384 60.4079 44.6743 59.7188 50.6462 59.7188C49.7275 61.097 48.9435 62.57 48.2942 64.138C47.6419 65.7091 47.1243 67.3368 46.7415 69.0212C42.1478 69.404 38.0516 70.188 34.4532 71.3732C30.8548 72.5615 27.8305 73.8064 25.3805 75.1079C24.6149 75.4908 24.0223 76.0451 23.6027 76.7709C23.1801 77.4998 22.9688 78.2853 22.9688 79.1275V82.6876H46.7415C47.1243 84.372 47.6419 85.9798 48.2942 87.5111C48.9435 89.0423 49.7275 90.497 50.6462 91.8752H13.7813Z" fill="black"/>
+								</g>
+							</svg>
+						</div>
+						<div class="service__title">Find A Doctor</div>
+						<div class="service__desc">Velit faucibus sed adipiscing commodo. Mattis in at amet, facilisis eu dolor. Quam sit risus egestas morbi.</div>
+						<div class="service__btn">
+							<a href="/">
+								<span>Learn More</span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+									<mask id="mask0_2775_5595" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+									<rect width="24" height="24" fill="#D9D9D9"/>
+									</mask>
+									<g mask="url(#mask0_2775_5595)">
+									<path d="M12 20L10.575 18.6L16.175 13H4V11H16.175L10.575 5.4L12 4L20 12L12 20Z" fill="#8842F0"/>
+									</g>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<!--service3-->
+					<div class="service">
+						<div class="service__img">
+							<svg xmlns="http://www.w3.org/2000/svg" width="109" height="109" viewBox="0 0 109 109" fill="none">
+								<mask id="mask0_2775_5606" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="109" height="109">
+								<rect width="108.25" height="108.25" fill="#D9D9D9"/>
+								</mask>
+								<g mask="url(#mask0_2775_5606)">
+								<path d="M31.573 81.1864H40.5938V72.1655H49.6147V63.1446H40.5938V54.1238H31.573V63.1446H22.5521V72.1655H31.573V81.1864ZM58.6356 65.3999H85.6981V58.6342H58.6356V65.3999ZM58.6356 78.9311H76.6773V72.1655H58.6356V78.9311ZM18.0417 99.2281C15.561 99.2281 13.4381 98.3455 11.673 96.5804C9.9049 94.8124 9.02086 92.6879 9.02086 90.2072V40.5925C9.02086 38.1118 9.9049 35.9874 11.673 34.2193C13.4381 32.4542 15.561 31.5717 18.0417 31.5717H40.5938V18.0404C40.5938 15.5596 41.4779 13.4352 43.246 11.6672C45.0111 9.90207 47.134 9.01953 49.6147 9.01953H58.6356C61.1163 9.01953 63.2407 9.90207 65.0088 11.6672C66.7739 13.4352 67.6564 15.5596 67.6564 18.0404V31.5717H90.2085C92.6893 31.5717 94.8137 32.4542 96.5818 34.2193C98.3468 35.9874 99.2294 38.1118 99.2294 40.5925V90.2072C99.2294 92.6879 98.3468 94.8124 96.5818 96.5804C94.8137 98.3455 92.6893 99.2281 90.2085 99.2281H18.0417ZM18.0417 90.2072H90.2085V40.5925H67.6564C67.6564 43.0733 66.7739 45.1962 65.0088 46.9612C63.2407 48.7293 61.1163 49.6134 58.6356 49.6134H49.6147C47.134 49.6134 45.0111 48.7293 43.246 46.9612C41.4779 45.1962 40.5938 43.0733 40.5938 40.5925H18.0417V90.2072ZM49.6147 40.5925H58.6356V18.0404H49.6147V40.5925Z" fill="#262626"/>
+								</g>
+							</svg>
+						</div>
+						<div class="service__title">Our Services</div>
+						<div class="service__desc">Velit faucibus sed adipiscing commodo. Mattis in at amet, facilisis eu dolor. Quam sit risus egestas morbi.</div>
+						<div class="service__btn">
+							<a href="/">
+								<span>Learn More</span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+									<mask id="mask0_2775_5595" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+									<rect width="24" height="24" fill="#D9D9D9"/>
+									</mask>
+									<g mask="url(#mask0_2775_5595)">
+									<path d="M12 20L10.575 18.6L16.175 13H4V11H16.175L10.575 5.4L12 4L20 12L12 20Z" fill="#8842F0"/>
+									</g>
+								</svg>
+							</a>
+						</div>
+					</div>
+	
+				</div>
+			</section>
+			
+			<section class="doctors-section">
+				<div class="title">Choose Your Specialist Doctor</div>
+				<div class="desc">Magnis facilisis tortor volutpat lobortis ac id. Libero enim nunc etiam consectetur lacus. In malesuada dictum turpis amet porttitor viverra laoreet at commodo. Pellentesque vitae id semper nec sollicitudin. Quis purus, mus consectetur pharetra ipsum facilisis amet cras purus.</div>
+				<section class="doctors">
+					<!--d1-->
+					<div class="doctor">
+						<div class="doctor__header">
+							<div class="doctor__img">
+								<img src="img/doc-photos/Ellipse 4.png" alt="Doctor">
+							</div>
+							<div class="doctor__info">
+								<div class="doctor__name">Kornelia Atkinson, MD</div>
+								<div class="doctor__role">Interventional Cardiologist</div>
+							</div>
+						</div>
+						<div class="doctor__about">Velit faucibus sed adipiscing commodo. Mattis in at amet, facilisis eu dolor. Quam sit risus egestas morbi.Velit faucibus sed adipiscing commodo. Mattis in at amet, facilisis eu dolor. Quam sit risus egestas morbi.Velit faucibus sed adipiscing</div>
+						<div class="doctor__btn">
+							<a class="btn _primary" href="/">Book Appointment</a>
+						</div>
+					</div>
+					<!--d2-->
+					<div class="doctor">
+						<div class="doctor__header">
+							<div class="doctor__img">
+								<img src="img/doc-photos/Ellipse 5.png" alt="Doctor">
+							</div>
+							<div class="doctor__info">
+								<div class="doctor__name">Humera Wood, MD</div>
+								<div class="doctor__role">OB-GYN Nurse Practitioner</div>
+							</div>
+						</div>
+						<div class="doctor__about">Velit faucibus sed adipiscing commodo. Mattis in at amet, facilisis eu dolor. Quam sit risus egestas morbi.Velit faucibus sed adipiscing commodo. Mattis in at amet, facilisis eu dolor. Quam sit risus egestas morbi.Velit faucibus sed adipiscing</div>
+						<div class="doctor__btn">
+							<a class="btn _primary" href="/">Book Appointment</a>
+						</div>
+					</div>
+					<!--d3-->
+					<div class="doctor">
+						<div class="doctor__header">
+							<div class="doctor__img">
+								<img src="img/doc-photos/Ellipse 6.png" alt="Doctor">
+							</div>
+							<div class="doctor__info">
+								<div class="doctor__name">Athena Barrow, MD</div>
+								<div class="doctor__role">Critical Care Specialist</div>
+							</div>
+						</div>
+						<div class="doctor__about">Velit faucibus sed adipiscing commodo. Mattis in at amet, facilisis eu dolor. Quam sit risus egestas morbi.Velit faucibus sed adipiscing commodo. Mattis in at amet, facilisis eu dolor. Quam sit risus egestas morbi.Velit faucibus sed adipiscing</div>
+						<div class="doctor__btn">
+							<a class="btn _primary" href="/">Book Appointment</a>
+						</div>
+					</div>
+					<!--d4-->
+					<div class="doctor">
+						<div class="doctor__header">
+							<div class="doctor__img">
+								<img src="img/doc-photos/Ellipse 7.png" alt="Doctor">
+							</div>
+							<div class="doctor__info">
+								<div class="doctor__name">Sion Jennings, MD</div>
+								<div class="doctor__role">Nurse Practitioner</div>
+							</div>
+						</div>
+						<div class="doctor__about">Velit faucibus sed adipiscing commodo. Mattis in at amet, facilisis eu dolor. Quam sit risus egestas morbi.Velit faucibus sed adipiscing commodo. Mattis in at amet, facilisis eu dolor. Quam sit risus egestas morbi.Velit faucibus sed adipiscing</div>
+						<div class="doctor__btn">
+							<a class="btn _primary" href="/">Book Appointment</a>
+						</div>
+					</div>
+					<!--d5-->
+					<div class="doctor">
+						<div class="doctor__header">
+							<div class="doctor__img">
+								<img src="img/doc-photos/Ellipse 8.png" alt="Doctor">
+							</div>
+							<div class="doctor__info">
+								<div class="doctor__name">Natasha Grant, MD</div>
+								<div class="doctor__role">Immunologist</div>
+							</div>
+						</div>
+						<div class="doctor__about">Velit faucibus sed adipiscing commodo. Mattis in at amet, facilisis eu dolor. Quam sit risus egestas morbi.Velit faucibus sed adipiscing commodo. Mattis in at amet, facilisis eu dolor. Quam sit risus egestas morbi.Velit faucibus sed adipiscing</div>
+						<div class="doctor__btn">
+							<a class="btn _primary" href="/">Book Appointment</a>
+						</div>
+					</div>
+					<!--d6-->
+					<div class="doctor">
+						<div class="doctor__header">
+							<div class="doctor__img">
+								<img src="img/doc-photos/Ellipse 9.png" alt="Doctor">
+							</div>
+							<div class="doctor__info">
+								<div class="doctor__name">Zubair Mac, MD</div>
+								<div class="doctor__role">Nurse Practitioner</div>
+							</div>
+						</div>
+						<div class="doctor__about">Velit faucibus sed adipiscing commodo. Mattis in at amet, facilisis eu dolor. Quam sit risus egestas morbi.Velit faucibus sed adipiscing commodo. Mattis in at amet, facilisis eu dolor. Quam sit risus egestas morbi.Velit faucibus sed adipiscing</div>
+						<div class="doctor__btn">
+							<a class="btn _primary" href="/">Book Appointment</a>
+						</div>
+					</div>
+
+				</section>
+			</section>
+		
+			<section class="join-section">
+				<div class="join-section__title">Join Our Newsletter</div>
+				<div class="join-section__subscribe">
+					<input class="join-section__input" type="Enter your email">
+					<button class="btn _primary join-section__btn">Subscribe</button>
+				</div>
+			</section>
+
+
+		</div>
+
+	</main>
+
+
+	<footer class="footer">
+		<div class="container footer__container">
+			<div class="footer__about">
+				<a href="/" class="footer__logo">Quiro Diagnostic Center</a>
+				<div class="footer__desc">Magnis facilisis tortor volutpat lobortis ac id. Libero enim nunc etiam consectetur lacus. In malesuada dictum turpis amet porttitor viverra laoreet at commodo. Pellentesque vitae id semper nec sollicitudin. Quis purus, mus consectetur pharetra ipsum facilisis amet cras purus.</div>
+			</div>
+			<div class="footer__info">
+				<div class="footer__info-header">Address</div>
+				<div class="footer__info-value">5 Koh Sek Lim Rd Singapore 486050</div>
+				<div class="footer__info-header">Telephone</div>
+				<div class="footer__info-value"><a href="/">(07)40127246</a> <a href="/">(02)67566577</a></div>
+				<div class="footer__info-header">Email</div>
+				<div class="footer__info-value"> <a href="/">name@email.com</a></div>
+			</div>
+			<div class="footer__hours">
+				<div class="footer__hours-header">Opening Hour</div>
+				<div class="footer__hours-value">Thursday: 9am - 6pm</div>
+				<div class="footer__hours-value">Wednesday: 9am - 6pm</div>
+				<div class="footer__hours-value">Saturday: 9am - 6pm</div>
+				<div class="footer__hours-value">Friday: 9am - 6pm</div>
+				<div class="footer__hours-value">Saturday: 9am - 6pm</div>
+				<div class="footer__hours-value">Tuesday: 9am - 6pm</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<script src="script.js"></script>
+</body>
+
+</html>

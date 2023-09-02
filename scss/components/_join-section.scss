@@ -1,0 +1,42 @@
+.join-section {
+    margin: 130rem 0;
+    border-radius: 10px;
+    background: var(--bg-secondary);
+    padding: 80rem;
+
+
+    &__title {
+        color: var(--c-text-white);
+        font-size: 36rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 47px;
+    }
+
+    &__subscribe {
+        max-width: 717rem;
+        margin-inline: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 50px;
+        gap: 10rem;
+        padding: 10rem 15rem;
+        background: var(--c-Terciary);
+    }
+
+    &__input {
+        padding-left: 16rem;
+        width: 100%;
+        background: transparent;
+        border: 0;
+        outline: 0;
+        color: #6C6C6C;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    &__btn {
+    }
+}
+

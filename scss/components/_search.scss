@@ -1,0 +1,30 @@
+.search {
+
+    border-radius: 50px;
+    background: #000;
+    padding: 14rem 15rem 14rem 18rem;
+    position: relative;
+
+
+    &__input {
+        width: 100%;
+        border: 0;
+        outline: 0;
+        display: inline-block ;
+        background: transparent;
+        color: #FFF;
+        font-family: var(--ff );
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-right: 29rem;
+    }
+
+    &__icon {
+       position: absolute;
+       right: 15px;
+       top: 50%;
+       transform: translateY(-50%);
+    }
+}

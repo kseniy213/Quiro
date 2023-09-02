@@ -1,0 +1,64 @@
+
+.footer {
+    background: var(--c-Terciary);
+    padding: 106rem  12rem 81rem 12rem;
+        &__container{
+            display: flex;
+            gap: 108rem;
+        }
+
+		&__about {
+		}
+
+		&__logo {
+            display: inline-block;
+            color: var(--c-paragraph);
+            font-size: 24rem;
+            font-weight: 600;
+            margin-bottom: 26rem;
+		}
+
+		&__desc {
+            color: var(--c-paragrap);            font-family: Work Sans;
+            font-size: 16rem;
+            font-weight: 400;
+            max-width: 431rem;
+		}
+
+		&__info {
+		}
+
+		&__info-header {
+            color: var(--c-paragraph);
+            font-size: 20rem;
+            font-weight: 600;
+            margin-bottom: 9rem;
+		}
+
+		&__info-value {
+            color: var(--c-paragraph);
+            font-size: 16rem;
+            font-weight: 400;
+            margin-bottom: 37rem;
+            display: inline-flex;
+            gap: 16rem;
+
+		}
+
+		&__hours {
+		}
+
+		&__hours-header {
+            color: var(--c-paragraph);
+            font-size: 20rem;
+            font-weight: 600;
+            margin-bottom: 17rem;
+		}
+
+		&__hours-value {
+            color: var(--c-paragraph);
+            font-size: 16rem;
+            font-weight: 400;
+            margin-bottom: 15rem;
+		}
+}
